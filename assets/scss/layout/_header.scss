@@ -1,0 +1,154 @@
+header {
+  background-color: #ececec;
+  height: 140px;
+
+  .top {
+    height: 70px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &__phone,
+    &__mail {
+      color: #2c3e50;
+
+      img {
+        margin-right: 4px;
+      }
+    }
+
+    &__mail {
+      margin-left: 48px;
+    }
+
+    &__social-group {
+      display: flex;
+      margin-left: 27px;
+
+      a {
+        width: 28px;
+        height: 28px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        &:not(:first-child) {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    background-color: $green;
+    align-items: center;
+    justify-content: space-between;
+
+    nav {
+      height: 70px;
+      display: flex;
+
+      .dropdown {        
+        &:hover {
+          a {
+            background-color: rgba($color: #ffffff, $alpha: .3);
+          }
+
+          .dropdown__menu {
+            display: block;
+          }
+        }
+
+        .dropdown__menu {
+          display: none;
+          position: absolute;
+          list-style: none;
+          left: 0;
+          white-space: nowrap;
+          padding: 25px;
+          font-size: 10px;
+          color: $green;
+          background-color: #ffffff;
+
+          li {
+            &:not(:last-child) {
+              margin-bottom: 20px;
+            }
+
+            &:hover {
+              color: #000000;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        height: 100%;
+        font-size: 10px;
+
+        &:hover {
+          background-color: rgba($color: #ffffff, $alpha: .3);
+        }
+
+        &.share {
+          padding: 0 27px;
+        }
+
+        &.ticket {
+          padding: 0 15px;
+        }
+
+        &.info {
+          padding: 0 30px;
+        }
+
+        &.contact {
+          padding: 0 10px;
+        }
+
+        &.news {
+          padding: 0 17px;
+        }
+
+        &.home {
+          padding: 0 23px;
+        }
+      }
+    }
+
+    .brand {
+      width: 195px;
+      height: 70px;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    input {
+      width: 307px;
+      height: 38px;
+      border: 1px solid #ffffff;
+      border-radius: 20px;
+      background-color: transparent;
+      margin-right: 30px;
+      padding-left: 15px;
+      
+      &::placeholder {
+        color: #ffffff;
+        font-size: 10px;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
