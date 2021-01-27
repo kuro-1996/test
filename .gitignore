@@ -1,4 +1,4 @@
 .settings/
 .vscode/
-.css.map
-.css
+*.css.map
+*.css
